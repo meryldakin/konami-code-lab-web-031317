@@ -1,13 +1,12 @@
-Konami Code Lab
----
+# Konami Code Lab
 
-## Objectives
+# Objectives
 
 1. Practice using event listeners
 2. Explain how event listeners are triggered
 3. Capture user interactions to trigger events on a page
 
-## Instructions
+# Instructions
 
 In `konami_code.js`, you'll notice that we've provided very little: well, just about nothing except -- what's that? If you open the file up in your text editor, you should see
 
@@ -23,7 +22,7 @@ But what could those numbers be? They're the famous [Konami Code](https://en.wik
 
 In `index.html`, you'll see that we're loading the file in for you:
 
-``` html
+```html
 <script src="konami_code.js"></script>
 ```
 
@@ -35,7 +34,7 @@ When you're testing the code out, be sure to call `init()` to set everything up!
 
 Stuck on how to get started? Here's a contrived, short example:
 
-``` javascript
+```javascript
 const alphabet = ['a', 'b', 'c']
 
 // keep track of index outside of the event handler
@@ -60,12 +59,12 @@ function onKeyDownHandler(e) {
 
 Have fun!
 
-## Hints
+# Hints
 
 Be aware that we're looking at both `e.detail` and `e.which`. In browsers nowadays, `e.which` is usually sufficient; however, I'll be honest with you: it's not universally supported, it's technically deprecated, and it doesn't work with our tests. So check `e.detail` too, please. :)
 
 Also note that we're calling `parseInt` on the key value. This is because the event handler might pass us the string representation of the number, which wouldn't work so well with our comparisons.
 
-## Resources
+# Resources
 
 - [Konami Code](https://en.wikipedia.org/wiki/Konami_Code)
